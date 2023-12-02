@@ -23,8 +23,8 @@ function displayProfile(data) {
                 <div class="card-subhead">${data.login}</div>
                 <div class="cardtxt">
                     <p>${data.bio}</p>
-                    <p><i class="fa-solid fa-user-group;"></i> ${data.followers} Followers ${data.following} Following</p>
-                    <p><i class="fa-solid fa-location-dot;"></i> ${data.location}</p>
+                    <p><i class="fa-regular fa-user"></i> ${data.followers} Followers ${data.following} Following</p>
+                    <p><i class="fa-solid fa-location-dot"></i> ${data.location}</p>
                     <button class="align">
                         <a href=${data.html_url} target="_blank">Visit Profile</a>
                     </button>
@@ -41,9 +41,9 @@ async function getRepo(username) {
         const projectDiv = document.createElement("div");
         projectDiv.className = "pro";
         projectDiv.innerHTML = `
-            <div class="card-body cb">
-                <div class="card-title one">${projects[i].name}</div>
-                <div class="card-subhead two">${projects[i].language}</div>
+            <div class="card-body-cb">
+                <div class="card-title-one">${projects[i].name}</div>
+                <div class="card-subhead-two">${projects[i].language}</div>
                 <div class="cardtxt">
                     <button>
                         <a href=${projects[i].html_url} target="_blank">Visit Project</a>
